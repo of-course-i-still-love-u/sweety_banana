@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF121823">
+
+
+    <TextView
+        android:id="@+id/textName"
+        style="@style/Text.Agent"
+        android:textSize="90sp"
+        android:textColor="@color/reyna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agent_name_reyna"
+        app:layout_constraintEnd_toEndOf="@id/guideLineMid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNameBG"
+        style="@style/Text.AgentBG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/valorant_regular"
+        android:text="@string/agent_name_reyna"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDetail" />
+
+
+    <ImageView
+        android:id="@+id/imageAgent"
+        android:layout_width="550dp"
+        android:layout_height="0dp"
+        android:background="@drawable/fullportrait_reyna"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/guideLineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textRole"
+        style="@style/Text.RoleAndTypeHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/role"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLineMid"
+        app:layout_constraintTop_toTopOf="@id/textName" />
+
+    <TextView
+        android:id="@+id/textRoleTitle"
+        style="@style/Text.RoleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duelist"
+        app:layout_constraintEnd_toStartOf="@id/ImageRoleIcon"
+        app:layout_constraintStart_toStartOf="@id/textRole"
+        app:layout_constraintTop_toBottomOf="@id/textRole" />
+
+    <ImageView
+        android:id="@+id/ImageRoleIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/duelist_role_icon"
+        app:layout_constraintStart_toEndOf="@id/textRoleTitle"
+        app:layout_constraintTop_toTopOf="@id/textRoleTitle" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLineMid"
+        app:layout_constraintTop_toBottomOf="@id/textRoleTitle" />
+
+    <TextView
+        android:id="@+id/textType"
+        style="@style/Text.RoleAndTypeHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/biography"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLineMid"
+        app:layout_constraintTop_toTopOf="@id/viewLine" />
+
+    <TextView
+        android:id="@+id/textDetail"
+        style="@style/Text.AgentDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="18dp"
+        android:text="@string/agent_detail_reyna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLineMid"
+        app:layout_constraintTop_toBottomOf="@id/textType" />
+
+
+    <TextView
+        android:id="@+id/textSpecialAB"
+        style="@style/Text.RoleAndTypeHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/special_ab"
+        app:layout_constraintEnd_toEndOf="@id/guideLineMid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideLineBottom"
+
+        />
+
+
+    <LinearLayout
+        android:id="@+id/LinearAB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSpecialAB">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded"
+            >
+
+            <ImageView
+                android:id="@+id/ImageSkillIcon1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/abilities_1_reyna"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded"
+            >
+
+            <ImageView
+                android:id="@+id/ImageSkillIcon2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/abilities_2_reyna"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded"
+            >
+
+            <ImageView
+                android:id="@+id/ImageSkillIcon3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/abilities_3_reyna"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="0.5"
+            android:background="@color/white" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded"
+            >
+
+            <ImageView
+                android:id="@+id/ImageSkillIcon4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/abilities_4_reyna"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+<!--    <androidx.constraintlayout.widget.Barrier-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:barrierDirection="bottom"-->
+<!--        app:constraint_referenced_ids="textSpecialAB"-->
+<!--        />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consLayoutSkillDetail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_active_reyna"
+        app:layout_constraintTop_toBottomOf="@id/LinearAB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="18dp"
+        >
+
+        <ImageView
+            android:id="@+id/ImageSkillDetail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/abilities_4_reyna"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textSkillDetail"
+        style="@style/Text.AgentDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/agent_skill_reyna"
+       app:layout_constraintTop_toTopOf="@id/consLayoutSkillDetail"
+        app:layout_constraintStart_toEndOf="@id/consLayoutSkillDetail"
+        app:layout_constraintBottom_toBottomOf="@id/consLayoutSkillDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="2"
+        />
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

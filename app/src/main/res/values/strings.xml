@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">"valoFragment"</string>
+    <string name="agent_name_sova">"sova"</string>
+    <string name="agent_name_sage">"sage"</string>
+    <string name="agent_name_reyna">"reyna"</string>
+    <string name="role">"// role"</string>
+    <string name="biography">"// biography"</string>
+    <string name="special_ab">"// special abilities"</string>
+    <string name="initiator">"initiator"</string>
+    <string name="sentinel">"sentinel"</string>
+    <string name="duelist">"duelist"</string>
+    <string name="agent_detail_sova">"Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide."</string>
+    <string name="agent_detail_sage">"The bastion of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off forceful assaults, she provides a calm center to a hellish battlefield."</string>
+    <string name="agent_detail_reyna">"Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance."</string>
+    <string name="agent_skill_sova">"EQUIP a bow with three long-range, wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova."</string>
+    <string name="agent_skill_sage">"EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them."</string>
+    <string name="agent_skill_reyna">"INSTANTLY enter a frenzy, gaining a Combat Stim that increases firing, equip and reload speed dramatically."</string>
+    <string name="next">"next"</string>
+
+
+</resources>
